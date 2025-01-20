@@ -2,10 +2,10 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
-import { backendUrl } from '../App'
+import { backendUrl, currency } from '../App'
 import { toast } from 'react-toastify'
 import { assets } from '../assets/assets'
-const currency = '₹'
+
 const Orders = ({ token }) => {
 
   const [orders, setOrders] = useState([])
@@ -60,10 +60,10 @@ const Orders = ({ token }) => {
                 <div>
                   {order.items.map((item, index) => {
                     if (index === order.items.length - 1) {
-                      return <p className='py-0.5' key={index}> {item.name} x {item.quantity}</p>
+                      return <p className='py-0.5' key={index}> {item.name} x {item.quantity} <span> {item.size} </span> </p>
                     }
                     else {
-                      return <p className='py-0.5' key={index}> {item.name} x {item.quantity} </p>
+                      return <p className='py-0.5' key={index}> {item.name} x {item.quantity} <span> {item.size} </span> ,</p>
                     }
                   })}
                 </div>
