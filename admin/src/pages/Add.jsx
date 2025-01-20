@@ -100,7 +100,7 @@ const Add = ({token}) => {
             <div>
               <p className='mb-2'>Service category</p>
               <select onChange={(e) => setCategory(e.target.value)} className='w-full px-3 py-2'>
-              <option value="Catering">Catering</option>
+                  <option value="Catering">Catering</option>
                   <option value="Mandapam">Mandapam</option>
                   <option value="Photography">Photography</option>
                   <option value="Makeup">Makeup</option>
@@ -118,9 +118,18 @@ const Add = ({token}) => {
             <div>
               <p className='mb-2'>Subcategory</p>
               <select onChange={(e) => setSubCategory(e.target.value)} className='w-full px-3 py-2'>
-                  <option value="Topwear">Tamil Cuisine, North Indian, South Indian, Chinese</option>
-                  <option value="Bottomwear">Bottomwear</option>
-                  <option value="Winterwear">Winterwear</option>
+                  <option value="Tamil Cuisine">Tamil Cuisine, North Indian, South Indian, Chinese</option>
+                  <option value="Indoor">Indoor, Outdoor, AC, Non-AC</option>
+                  <option value="Candid">Candid, Traditional, Drone, Videography</option>
+                  <option value="Bridal makeup">Bridal makeup, Groom makeup, Party makeup                  </option>
+                  <option value="Floral">Floral, Balloon, Fabric, Lighting                  </option>
+                  <option value="Traditional">Traditional, Modern, Floral, Greenery                  </option>
+                  <option value="Live bands"> Live bands, DJs, Emcees, Dancers                  </option>
+                  <option value="Decorated vehicles">Decorated vehicles, Chauffeur services                  </option>
+                  <option value="Hotel bookings"> Hotel bookings, Resort bookings, Home stays                  </option>
+                  <option value="Digital invitations">Digital invitations, Paper invitations, Customized invitations                  </option>
+                  <option value="Traditional">Traditional, Modern, Customized designs                  </option>
+                  <option value="LED lights">LED lights, String lights, Sound systems                  </option>
               </select>
             </div>
 
