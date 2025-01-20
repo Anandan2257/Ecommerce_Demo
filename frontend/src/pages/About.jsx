@@ -14,8 +14,8 @@ const About = () => {
       <div className='my-10 flex flex-col md:flex-row gap-16'>
           <img className='w-full md:max-w-[450px]' src={assets.about_img} alt="" />
           <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
-              <p>One Village Functions was born to bridge the gap between Tamil Nadu's vibrant cultural traditions and the modern needs of our people. </p>
-              <p>Our platform is a one-stop destination for connecting with local vendors and services, ensuring every event is celebrated with authenticity and ease.</p>
+              <p>Forever was born out of a passion for innovation and a desire to revolutionize the way people shop online. Our journey began with a simple idea: to provide a platform where customers can easily discover, explore, and purchase a wide range of products from the comfort of their homes.</p>
+              <p>Since our inception, we've worked tirelessly to curate a diverse selection of high-quality products that cater to every taste and preference. From fashion and beauty to electronics and home essentials, we offer an extensive collection sourced from trusted brands and suppliers.</p>
               <b className='text-gray-800'>Our Mission</b>
               <p>Our mission at Forever is to empower customers with choice, convenience, and confidence. We're dedicated to providing a seamless shopping experience that exceeds expectations, from browsing and ordering to delivery and beyond.</p>
           </div>
@@ -28,15 +28,15 @@ const About = () => {
       <div className='flex flex-col md:flex-row text-sm mb-20'>
           <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
             <b>Quality Assurance:</b>
-            <p className=' text-gray-600'>We partner with verified vendors to ensure you receive the best services and products for your events.</p>
+            <p className=' text-gray-600'>We meticulously select and vet each product to ensure it meets our stringent quality standards.</p>
           </div>
           <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
             <b>Convenience:</b>
-            <p className=' text-gray-600'>Browse, compare, and book services or products with just a few clicks, all in one app.</p>
+            <p className=' text-gray-600'>With our user-friendly interface and hassle-free ordering process, shopping has never been easier.</p>
           </div>
           <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
             <b>Exceptional Customer Service:</b>
-            <p className=' text-gray-600'>Our dedicated support team is always available to assist you, ensuring your satisfaction is our top priority.</p>
+            <p className=' text-gray-600'>Our team of dedicated professionals is here to assist you the way, ensuring your satisfaction is our top priority.</p>
           </div>
       </div>
 
