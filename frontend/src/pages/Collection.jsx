@@ -94,29 +94,83 @@ const Collection = () => {
         <div className={`border border-gray-300 pl-5 py-3 mt-6 ${showFilter ? '' :'hidden'} sm:block`}>
           <p className='mb-3 text-sm font-medium'>CATEGORIES</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Men'} onChange={toggleCategory}/> Men
+          <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Catering'} onChange={toggleCategory}/> Catering
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Women'} onChange={toggleCategory}/> Women
+              <input className='w-3' type="checkbox" value={'Mandapam'} onChange={toggleCategory}/> Mandapam
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Kids'} onChange={toggleCategory}/> kids
+              <input className='w-3' type="checkbox" value={'Photography'} onChange={toggleCategory}/> Photography
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Makeup'} onChange={toggleCategory}/> Makeup
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Stage Decoration'} onChange={toggleCategory}/> Stage Decoration
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Panthal Decoration'} onChange={toggleCategory}/> Panthal Decoration
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Music and Entertainment'} onChange={toggleCategory}/> Music and Entertainment
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Transportation'} onChange={toggleCategory}/> Transportation
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Accommodation'} onChange={toggleCategory}/> Accommodation
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Wedding Invitations'} onChange={toggleCategory}/> Wedding Invitations
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Wedding Cakes'} onChange={toggleCategory}/> Wedding Cakes
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={' Lighting and Sound'} onChange={toggleCategory}/>  Lighting and Sound
             </p>
           </div>
         </div>
         {/* SubCategory Filter */}
         <div className={`border border-gray-300 pl-5 py-3 my-5 ${showFilter ? '' :'hidden'} sm:block`}>
-          <p className='mb-3 text-sm font-medium'>TYPE</p>
+          <p className='mb-3 text-sm font-medium'>SUB CATEGORY</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Topwear'} onChange={toggleSubCategory}/> Topwear
+              <input className='w-3' type="checkbox" value={'Tamil Cuisine'} onChange={toggleSubCategory}/> Tamil Cuisine, North Indian, South Indian, Chinese
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Bottomwear'} onChange={toggleSubCategory}/> Bottomwear
+              <input className='w-3' type="checkbox" value={'Indoor'} onChange={toggleSubCategory}/> Indoor, Outdoor, AC, Non-AC
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Winterwear'} onChange={toggleSubCategory}/> Winterwear
+              <input className='w-3' type="checkbox" value={'Candid'} onChange={toggleSubCategory}/> Candid, Traditional, Drone, Videography
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Bridal makeup'} onChange={toggleSubCategory}/>Bridal makeup, Groom makeup, Party makeup
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Floral'} onChange={toggleSubCategory}/> Floral, Balloon, Fabric, Lighting 
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Traditional'} onChange={toggleSubCategory}/> Traditional, Modern, Floral, Greenery 
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Live bands'} onChange={toggleSubCategory}/> Live bands, DJs, Emcees, Dancers 
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Decorated vehicles'} onChange={toggleSubCategory}/> Decorated vehicles, Chauffeur services
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Hotel bookings'} onChange={toggleSubCategory}/> Hotel bookings, Resort bookings, Home stays
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Digital invitations'} onChange={toggleSubCategory}/> Digital invitations, Paper invitations, Customized invitations
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'Traditional'} onChange={toggleSubCategory}/> Traditional, Modern, Customized designs 
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type="checkbox" value={'LED lights'} onChange={toggleSubCategory}/> LED lights, String lights, Sound systems 
             </p>
           </div>
         </div>
