@@ -86,63 +86,64 @@ const Add = ({token}) => {
         </div>
 
         <div className='w-full'>
-          <p className='mb-2'>Product name</p>
+          <p className='mb-2'>Service Name</p>
           <input onChange={(e)=>setName(e.target.value)} value={name} className='w-full max-w-[500px] px-3 py-2' type="text" placeholder='Type here' required/>
         </div>
 
         <div className='w-full'>
-          <p className='mb-2'>Product description</p>
+          <p className='mb-2'>Service description</p>
           <textarea onChange={(e)=>setDescription(e.target.value)} value={description} className='w-full max-w-[500px] px-3 py-2' type="text" placeholder='Write content here' required/>
         </div>
 
         <div className='flex flex-col sm:flex-row gap-2 w-full sm:gap-8'>
 
             <div>
-              <p className='mb-2'>Product category</p>
+              <p className='mb-2'>Service category</p>
               <select onChange={(e) => setCategory(e.target.value)} className='w-full px-3 py-2'>
-                  <option value="Men">Men</option>
-                  <option value="Women">Women</option>
-                  <option value="Kids">Kids</option>
+              <option value="Catering">Catering</option>
+                  <option value="Mandapam">Mandapam</option>
+                  <option value="Photography">Photography</option>
+                  <option value="Makeup">Makeup</option>
+                  <option value="Stage Decoration">Stage Decoration</option>
+                  <option value="Panthal Decoration">Panthal Decoration</option>
+                  <option value="Music and Entertainment">Music and Entertainment</option>
+                  <option value="Transportation">Transportation</option>
+                  <option value="Accommodation">Accommodation</option>
+                  <option value="Wedding Invitations">Wedding Invitations</option>
+                  <option value="Wedding Cakes">Wedding Cakes</option>
+                  <option value="Lighting and Sound">Lighting and Sound</option>
               </select>
             </div>
 
             <div>
-              <p className='mb-2'>Sub category</p>
+              <p className='mb-2'>Subcategory</p>
               <select onChange={(e) => setSubCategory(e.target.value)} className='w-full px-3 py-2'>
-                  <option value="Topwear">Topwear</option>
+                  <option value="Topwear">Tamil Cuisine, North Indian, South Indian, Chinese</option>
                   <option value="Bottomwear">Bottomwear</option>
                   <option value="Winterwear">Winterwear</option>
               </select>
             </div>
 
             <div>
-              <p className='mb-2'>Product Price</p>
+              <p className='mb-2'>Service Price</p>
               <input onChange={(e) => setPrice(e.target.value)} value={price} className='w-full px-3 py-2 sm:w-[120px]' type="Number" placeholder='25' />
             </div>
 
         </div>
 
         <div>
-          <p className='mb-2'>Product Sizes</p>
+          <p className='mb-2'>Packages</p>
           <div className='flex gap-3'>
-            <div onClick={()=>setSizes(prev => prev.includes("S") ? prev.filter( item => item !== "S") : [...prev,"S"])}>
-              <p className={`${sizes.includes("S") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>S</p>
+            <div onClick={()=>setSizes(prev => prev.includes("Basic") ? prev.filter( item => item !== "Basic") : [...prev,"Basic"])}>
+              <p className={`${sizes.includes("Basic") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>Basic</p>
             </div>
             
-            <div onClick={()=>setSizes(prev => prev.includes("M") ? prev.filter( item => item !== "M") : [...prev,"M"])}>
-              <p className={`${sizes.includes("M") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>M</p>
+            <div onClick={()=>setSizes(prev => prev.includes("Premium") ? prev.filter( item => item !== "Premium") : [...prev,"Premium"])}>
+              <p className={`${sizes.includes("Premium") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>Premium</p>
             </div>
 
-            <div onClick={()=>setSizes(prev => prev.includes("L") ? prev.filter( item => item !== "L") : [...prev,"L"])}>
-              <p className={`${sizes.includes("L") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>L</p>
-            </div>
-
-            <div onClick={()=>setSizes(prev => prev.includes("XL") ? prev.filter( item => item !== "XL") : [...prev,"XL"])}>
-              <p className={`${sizes.includes("XL") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>XL</p>
-            </div>
-
-            <div onClick={()=>setSizes(prev => prev.includes("XXL") ? prev.filter( item => item !== "XXL") : [...prev,"XXL"])}>
-              <p className={`${sizes.includes("XXL") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>XXL</p>
+            <div onClick={()=>setSizes(prev => prev.includes("Elite") ? prev.filter( item => item !== "Elite") : [...prev,"Elite"])}>
+              <p className={`${sizes.includes("Elite") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>Elite</p>
             </div>
           </div>
         </div>
