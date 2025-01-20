@@ -4,7 +4,7 @@ import Stripe from 'stripe'
 import razorpay from 'razorpay'
 
 // global variables
-const currency = '₹'
+const currency = 'inr'
 const deliveryCharge = 10
 
 // gateway initialize
