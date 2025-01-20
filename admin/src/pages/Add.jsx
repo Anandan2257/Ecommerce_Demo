@@ -143,15 +143,15 @@ const Add = ({token}) => {
         <div>
           <p className='mb-2'>Packages</p>
           <div className='flex gap-3'>
-            <div onClick={()=>setSizes(prev => prev.includes("B") ? prev.filter( item => item !== "B") : [...prev,"B"])}>
+            <div onClick={()=>setSizes(prev => prev.includes("B") ? prev.filter( item => item !== "B") : [...prev,"Basic"])}>
               <p className={`${sizes.includes("B") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>Basic</p>
             </div>
             
-            <div onClick={()=>setSizes(prev => prev.includes("P") ? prev.filter( item => item !== "P") : [...prev,"P"])}>
+            <div onClick={()=>setSizes(prev => prev.includes("P") ? prev.filter( item => item !== "P") : [...prev,"Premium"])}>
               <p className={`${sizes.includes("P") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>Premium</p>
             </div>
 
-            <div onClick={()=>setSizes(prev => prev.includes("E") ? prev.filter( item => item !== "E") : [...prev,"E"])}>
+            <div onClick={()=>setSizes(prev => prev.includes("E") ? prev.filter( item => item !== "E") : [...prev,"Elite"])}>
               <p className={`${sizes.includes("E") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>Elite</p>
             </div>
           </div>
