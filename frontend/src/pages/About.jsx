@@ -12,7 +12,7 @@ const About = () => {
       </div>
 
       <div className='my-10 flex flex-col md:flex-row gap-16'>
-          <img className='w-full md:max-w-[300px]' src={assets.about_img} alt="" />
+          <img className='w-full md:max-w-[400px]' src={assets.about_img} alt="" />
           <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
               <p>We are a team of passionate individuals dedicated to bridging the gap between villagers and essential services. Our journey began with a simple yet ambitious idea: to create a platform that connects villagers to the services they need, when they need them.              </p>
               <p>Since our inception, we've worked tirelessly to curate a diverse range of services that cater to every aspect of village life. From daily essentials like grocery delivery and healthcare services to village development initiatives and more, our platform is designed to make life easier, more convenient, and more enjoyable for villagers.              </p>
