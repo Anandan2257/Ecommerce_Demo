@@ -134,7 +134,7 @@ const Collection = () => {
         </div>
         {/* SubCategory Filter */}
         <div className={`border border-gray-300 pl-5 py-3 my-5 ${showFilter ? '' :'hidden'} sm:block`}>
-          <p className='mb-3 text-sm font-medium'>SUB CATEGORY</p>
+          <p className='mb-3 text-sm font-medium'>SUB CATEGORIES</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
               <input className='w-3' type="checkbox" value={'Tamil Cuisine'} onChange={toggleSubCategory}/> Tamil Cuisine, North Indian, South Indian, Chinese
@@ -180,7 +180,7 @@ const Collection = () => {
       <div className='flex-1'>
 
         <div className='flex justify-between text-base sm:text-2xl mb-4'>
-            <Title text1={'ALL'} text2={'COLLECTIONS'} />
+            <Title text1={'ALL'} text2={'SERVICES'} />
             {/* Porduct Sort */}
             <select onChange={(e)=>setSortType(e.target.value)} className='border-2 border-gray-300 text-sm px-2'>
               <option value="relavent">Sort by: Relavent</option>
