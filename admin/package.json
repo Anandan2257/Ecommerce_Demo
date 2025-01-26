@@ -21,7 +21,8 @@
     "react-router-dom": "^6.28.2",
     "react-toastify": "^10.0.5",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "vercel": "^39.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
