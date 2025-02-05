@@ -12,6 +12,7 @@ const Add = ({token}) => {
   const [image4,setImage4] = useState(false)
 
    const [name, setName] = useState("");
+   const [name1, setLocation] = useState("");
    const [description, setDescription] = useState("");
    const [price, setPrice] = useState("");
    const [category, setCategory] = useState("Men");
@@ -27,6 +28,7 @@ const Add = ({token}) => {
       const formData = new FormData()
 
       formData.append("name",name)
+      formData.append("name1",name1)
       formData.append("description",description)
       formData.append("price",price)
       formData.append("category",category)
@@ -91,7 +93,7 @@ const Add = ({token}) => {
         </div>
         <div className='w-full'>
           <p className='mb-2'>Location </p>
-          <input onChange={(e)=>setName(e.target.value)} value={name} className='w-full max-w-[500px] px-3 py-2' type="text" placeholder='Type here' required/>
+          <input onChange={(e)=>setName(e.target.value)} value={name1} className='w-full max-w-[500px] px-3 py-2' type="text" placeholder='Type here' required/>
         </div>
 
         <div className='w-full'>
